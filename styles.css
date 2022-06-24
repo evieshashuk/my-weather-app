@@ -1,0 +1,146 @@
+/* clears the ‘X’ from Internet Explorer */
+input[type="search"]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+input[type="search"]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+/* clears the ‘X’ from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+.frame {
+  background-image: linear-gradient(
+    to left,
+    rgba(235, 238, 239, 0.938),
+    rgb(252, 253, 255)
+  );
+  border-radius: 10px;
+  margin: 10% auto;
+  width: 80%;
+  padding: 50px 50px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.location {
+  background-image: url("app.JPG");
+  background-color: #cccccc;
+  border-radius: 10px 50px 50px 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.white-frame {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 9px 9px 5px #96979a;
+  padding-right: 20px;
+}
+
+.title {
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  display: block;
+  margin-top: 40%;
+}
+
+.line {
+  border: 1px solid #fff;
+  width: 200px;
+}
+
+.newForm {
+  text-align: center;
+  color: red;
+}
+
+.search-box {
+  line-height: 30px;
+  border: 1px solid #fff;
+  border-radius: 8px;
+
+  width: 50%;
+}
+.search-button {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  margin-left: -33px;
+}
+.search-button i {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  color: #96979a;
+}
+.current-day {
+  text-align: left;
+  font-size: 40px;
+}
+
+.box-weather {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 9px 9px 5px #96979a;
+  display: inline-block;
+}
+
+.box-weather-small {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 9px 9px 5px #96979a;
+  margin: 20px 10px;
+}
+
+.vl {
+  border-left: 2px solid #96979a;
+  height: 200px;
+  padding-top: 10%;
+}
+.temperature {
+  font-size: 70px;
+  font-weight: bold;
+  margin-bottom: -20px;
+}
+
+.weather-state {
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+.daily {
+  margin-top: 30px;
+}
+
+.daily-weather {
+  font-size: 25px;
+}
+
+.current-location-button {
+  margin: 15px 0 0 140px;
+  font-size: 15px;
+  background: none;
+  border: none;
+  border-radius: 5px;
+  color: #9a9896;
+  text-decoration: underline;
+}
+
+.current-location-button:hover {
+  color: cadetblue;
+}
+
+.weather-main-icon {
+  width: 30px;
+  float: left;
+}
