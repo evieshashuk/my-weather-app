@@ -79,11 +79,6 @@ input[type="search"]::-webkit-search-results-decoration {
   color: #fff;
 }
 
-.search-button i:after {
-  background: transparent;
-  border: none;
-  outline: none;
-}
 .current-day {
   text-align: left;
   font-size: 40px;
@@ -93,7 +88,7 @@ input[type="search"]::-webkit-search-results-decoration {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 9px 9px 5px #96979a;
-  display: inline-block;
+  /*display: inline-block;*/
 }
 
 .box-weather-small {
@@ -103,11 +98,16 @@ input[type="search"]::-webkit-search-results-decoration {
   margin: 20px 10px;
 }
 
+.test {
+  display: flex;
+  float: right;
+}
 .vl {
-  border-left: 2px solid #96979a;
-  height: 200px;
+  /* border-left: 2px solid #96979a;
+  height: 200px;*/
   padding-top: 10%;
 }
+
 .temperature {
   font-size: 70px;
   font-weight: bold;
@@ -128,8 +128,8 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .current-location-button {
-  margin: 15px 0 0 140px;
-  font-size: 15px;
+  margin: 20px 0;
+  font-size: 20px;
   background: none;
   border: none;
   border-radius: 5px;
