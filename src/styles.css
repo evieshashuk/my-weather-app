@@ -142,6 +142,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .weather-main-icon {
-  width: 30px;
+  width: 50px;
   float: left;
+  margin-top: -15px;
 }
