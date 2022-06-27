@@ -31,7 +31,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .location {
-  background-image: url("app.JPG");
+  background-image: url("img.JPG");
   background-color: #cccccc;
   border-radius: 10px 50px 50px 10px;
   background-repeat: no-repeat;
@@ -47,6 +47,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .title {
   color: #fff;
+  text-shadow: 1px 1px 2px black;
   font-size: 30px;
   text-align: center;
   display: block;
@@ -56,13 +57,12 @@ input[type="search"]::-webkit-search-results-decoration {
 .line {
   border: 1px solid #fff;
   width: 200px;
+  text-shadow: 5px 5px 5px black;
 }
 
 .newForm {
   text-align: center;
-  color: red;
 }
-
 .search-box {
   line-height: 30px;
   border: 1px solid #fff;
@@ -74,14 +74,9 @@ input[type="search"]::-webkit-search-results-decoration {
   background: transparent;
   border: none;
   outline: none;
-  color: #fff;
-  margin-left: -33px;
 }
 .search-button i {
-  width: 20px;
-  height: 20px;
-  object-fit: cover;
-  color: #96979a;
+  color: #fff;
 }
 .current-day {
   text-align: left;
