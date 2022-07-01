@@ -82,7 +82,7 @@ function locationButton(position) {
   function showTemperature(position) {
     let temperatureCur = document.querySelector("#temperature");
     currentTemperature = Math.round(position.data.main.temp);
-    temperatureCur.innerHTML = currentTemperature;
+    temperatureCur.innerHTML = currentTemperature + `°`;
 
     let city = document.querySelector("#currentCity");
     let cityName = position.data.name;
@@ -147,5 +147,6 @@ farenheitLinkCur.addEventListener("click", showFarenheitTempCur);
 function showFarenheitTempCur(event) {
   event.preventDefault();
   let temperatureElementCur = document.querySelector("#temperature");
-  temperatureElementCur.innerHTML = Math.round(farenheitTemperature) + `°`;
+  let farenheitTemp = (temperature * 9) / 5 + 32;
+  temperatureElementCur.innerHTML = Math.round(farenheitTemp) + `°`;
 }
