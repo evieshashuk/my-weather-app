@@ -147,5 +147,5 @@ farenheitLinkCur.addEventListener("click", showFarenheitTempCur);
 function showFarenheitTempCur(event) {
   event.preventDefault();
   let temperatureElementCur = document.querySelector("#temperature");
-  temperatureElementCu.innerHTML = Math.round(farenheitTemperature) + `°`;
+  temperatureElementCur.innerHTML = Math.round(farenheitTemperature) + `°`;
 }
