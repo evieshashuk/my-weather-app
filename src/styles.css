@@ -146,3 +146,16 @@ input[type="search"]::-webkit-search-results-decoration {
   float: left;
   margin-top: -15px;
 }
+
+.units {
+  float: right;
+}
+
+.units a {
+  color: black;
+  cursor: default;
+}
+
+.units a:hover {
+  text-decoration: none;
+}

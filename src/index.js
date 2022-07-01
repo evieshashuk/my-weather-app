@@ -36,6 +36,9 @@ function searchCity(event) {
 let search = document.querySelector("#searchcityButton");
 search.addEventListener("click", searchCity);
 
+let temperature = null;
+let currentTemperature = null;
+
 // Wreather
 function showWeather(response) {
   let city = document.querySelector("#currentCity");
@@ -43,7 +46,7 @@ function showWeather(response) {
   city.innerHTML = `Today in ` + cityName;
 
   let temperatureElement = document.querySelector("#temperature");
-  let temperature = Math.round(response.data.main.temp);
+  temperature = Math.round(response.data.main.temp);
   temperatureElement.innerHTML = temperature + `°`;
 
   let humidityElement = document.querySelector("#humidity");
@@ -77,8 +80,8 @@ function locationButton(position) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
 
   function showTemperature(position) {
-    let currentTemperature = Math.round(position.data.main.temp);
     let temperatureCur = document.querySelector("#temperature");
+    currentTemperature = Math.round(position.data.main.temp);
     temperatureCur.innerHTML = currentTemperature;
 
     let city = document.querySelector("#currentCity");
@@ -116,3 +119,33 @@ function getCurrentPosition(event) {
 }
 let locationCurrent = document.querySelector("#searchCurrentLocation");
 locationCurrent.addEventListener("click", getCurrentPosition);
+
+//convert C to F
+
+function showFarenheitTemp(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  let farenheitTemperature = (temperature * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(farenheitTemperature) + `°`;
+}
+
+function showCelsiusTemp(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(temperature) + `°`;
+}
+
+let farenheitLink = document.querySelector("#farenheit");
+farenheitLink.addEventListener("click", showFarenheitTemp);
+
+let celsiusLink = document.querySelector("#celsius");
+celsiusLink.addEventListener("click", showCelsiusTemp);
+
+let farenheitLinkCur = document.querySelector("#farenheit");
+farenheitLinkCur.addEventListener("click", showFarenheitTempCur);
+
+function showFarenheitTempCur(event) {
+  event.preventDefault();
+  let temperatureElementCur = document.querySelector("#temperature");
+  temperatureElementCu.innerHTML = Math.round(farenheitTemperature) + `°`;
+}
