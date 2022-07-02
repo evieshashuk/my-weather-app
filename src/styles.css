@@ -95,7 +95,7 @@ input[type="search"]::-webkit-search-results-decoration {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 9px 9px 5px #96979a;
-  margin: 20px 10px;
+  margin: 20px 5px;
 }
 
 .test {
@@ -125,6 +125,11 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .daily-weather {
   font-size: 25px;
+}
+
+.daily-weather-min {
+  font-size: 25px;
+  opacity: 0.4;
 }
 
 .current-location-button {
