@@ -72,6 +72,30 @@ function showWeather(response) {
   );
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class = "row">`;
+  let days = ["Mon", "Tue", "Wed", "Tur"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+<div class = "col-5 box-weather-small">
+<span class="daily-weather"> 28° </span>
+<span class="daily-weather-min"> 11°</span>
+<p>Rain  <i class = "fas fa-sun"></i></p>
+<p>${day} 23, June 22</p>
+</div>
+
+`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+  console.log(forecastHTML);
+}
+
 // Current location
 function locationButton(position) {
   let lat = position.coords.latitude;
@@ -150,3 +174,5 @@ function showFarenheitTempCur(event) {
   let farenheitTemp = (temperature * 9) / 5 + 32;
   temperatureElementCur.innerHTML = Math.round(farenheitTemp) + `°`;
 }
+
+displayForecast();
