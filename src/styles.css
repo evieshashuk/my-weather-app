@@ -31,7 +31,6 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .location {
-  background-image: url("img.JPG");
   background-color: #cccccc;
   border-radius: 10px 50px 50px 10px;
   background-repeat: no-repeat;
@@ -52,31 +51,37 @@ input[type="search"]::-webkit-search-results-decoration {
   text-align: center;
   display: block;
   margin-top: 40%;
+  position: relative;
 }
 
 .line {
   border: 1px solid #fff;
   width: 200px;
   text-shadow: 5px 5px 5px black;
+  position: relative;
 }
 
 .newForm {
   text-align: center;
+  position: relative;
 }
 .search-box {
   line-height: 30px;
   border: 1px solid #fff;
   border-radius: 8px;
   width: 50%;
+  position: relative;
 }
 .search-button {
   background: transparent;
   border: 2px solid #fff;
   border-radius: 2px;
+  position: relative;
   /*border: none;*/
 }
 .search-button i {
   color: #fff;
+  position: relative;
 }
 
 .current-day {
@@ -158,9 +163,19 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .units a {
   color: black;
-  cursor: default;
+  cursor: pointer;
 }
 
 .units a:hover {
   text-decoration: none;
+  color: cadetblue;
+}
+
+video {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
