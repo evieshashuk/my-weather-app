@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather forcast</title>
+    <title>⛅ Weather forcast</title>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,16 +23,23 @@
   <body>
     <div class="container frame">
 
+
 <div class = "row white-frame">
 
   
   
 <div class="col-7 location">
+
+        <video autoplay muted loop >
+    <source src="src/tropical.mp4" type="video/mp4">
+    Your browser does not support the video tag
+  </video>
+
 <h2 class="title"> Your daily weather forcast</h2>
 
 <hr class="line">
 
-<form class="newForm">
+<form class="newForm" id="search-form">
     <input type="search" placeholder=" search" class="search-box" id="searchCityInput">
     <button type="submit" class="search-button" id="searchcityButton">
       <i class="fa-solid fa-magnifying-glass"></i>
@@ -78,10 +85,10 @@
 <div class="row"> 
 
 <div class = "col-5 box-weather-small">
-<span class="daily-weather"> 28° </span>
-<span class="daily-weather-min"> 11°</span>
-<p>Rain  <i class = "fas fa-sun"></i></p>
-<p>Wed 23, June 22</p>
+<span class="daily-weather"> </span>
+<span class="daily-weather-min"> </span>
+<p> </p>
+<p></p>
 </div>
 
 
@@ -92,7 +99,7 @@
 </div>
 </div>
 
-<small><a href="https://github.com/evieshashuk/my-weather-app"> Open-source code</a> by Evie Shashuk </small>
+<small><a  href="https://github.com/evieshashuk/my-weather-app"> Open-source code</a> by Evie Shashuk </small>
 
         </div>
     </footer>
